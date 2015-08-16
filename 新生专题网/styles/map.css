@@ -1,0 +1,132 @@
+body{
+    background: url("../images/bg-pic.jpg") 50% 0 no-repeat;
+}
+.wrap{
+    margin: 0 auto;
+    width: 985px;
+    height: 100%;
+    position: relative;
+}
+#nav #map{
+    background-color: #d0ea59;
+    color: #66a01c;
+}
+/*content*/
+#content{
+    position: relative;
+}
+#content .wrap{
+    text-align: center;
+}
+#big-logo{
+    margin-top: 85px;
+}
+#cqupt-map-logo{
+    margin-top: 124px;
+    margin-bottom: 25px;
+}
+#map-wrap{
+    background: url("../images/cqupt-map-bg.png");
+    width: 992px;
+    height: 728px;
+    overflow: hidden;
+    margin-bottom: 62px;
+}
+.btn{
+    position: relative;
+    width: 129px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #ff6d31;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-left-top{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+.btn-right-bottom{
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}
+
+.unchoose{
+    font-size: 20px;
+    color: #ff6f30;
+    background-color: #fff3b7;
+    cursor: pointer;
+    width: 129px;
+    height: 39px;
+    line-height: 39px;
+    font-family: "Microsoft YaHei";
+    border-radius: 3px;
+    text-align: center;
+}
+#btn-left, #btn-right{
+    display: inline-block;
+    margin-top: 24px;
+}
+
+
+#enlarge-map{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 16px;
+    width: 914px;
+    height: 588px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    background: url("../images/map.jpg") no-repeat;
+    cursor: pointer;
+}
+#thumbnail{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url("../images/thumbnail.png");
+    width: 175px;
+    height: 139px;
+}
+#map-shadow{
+    width: 165px;
+    height: 129px;
+    background-color: #fff;
+    opacity: 0.5;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+#glass{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 74px;
+    height: 48px;
+    z-index: 3;
+    border: 1px solid #ff6520;
+    background-image: url("../images/glass.png");
+    background-position: 0 0;
+    cursor: pointer;
+}
+#streetscape{
+    width: 914px;
+    height: 588px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 16px;
+    position: relative;
+    display: none;
+}
+/*content*/

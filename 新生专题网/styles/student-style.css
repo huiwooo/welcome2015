@@ -1,0 +1,209 @@
+body {
+    background: url("../images/bg-pic.jpg") 50% 0 no-repeat;
+}
+.warp {
+    margin: 0 auto;
+    width: 985px;
+    height: 100%;
+    position: relative;
+}
+
+/*content*/
+#content {
+    position: relative;
+}
+#content .warp {
+    text-align: center;
+}
+#big-logo {
+    margin-top: 85px;
+}
+#cqupt-style-logo{
+    margin-top: 124px;
+    margin-bottom: 25px;
+}
+#student-style-warp {
+    background: url("../images/student-style-bg.png") no-repeat;
+    width: 992px;
+    height: 707px;
+/*    overflow: hidden;*/
+    margin-bottom: 62px;
+}
+.btn {
+    position: relative;
+    width: 129px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    background-color: #ff6d31;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-left-top {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}
+.btn-right-bottom {
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}
+
+#btn-left {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#to-top {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    right: 100px;
+    bottom: 230px;
+}
+.student-style-content {
+    width: 922px;
+    height: 590px;
+    background-image: url("../images/student-style-bg-content.png");
+    background-repeat: no-repeat;
+    margin: 36px;
+    margin-top: 20px;
+}
+.style-content-wrap {
+    margin: 0 auto;
+    width: 593px;
+    height: 51px;
+}
+
+#star-wrap,#cqupt-img-wrap,#video-wrap,#teacher-wrap {
+    float: left;
+    width: 104px;
+    height: 36px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-left: 36px;
+    font-family: "Microsoft YaHei";
+    cursor: pointer;
+}
+#star-wrap {
+    background-color: #ff6f30;
+}
+#cqupt-img-wrap,#video-wrap,#teacher-wrap {
+    color: #ff6f30;
+}
+#cqupt-img,#original-video,#excellent-teacher {
+    display: none;
+}
+.star-page1,.star-page2,#cqupt-img-page1,#cqupt-img-page2,#cqupt-img-page3,#cqupt-img-page4,#cqupt-img-page5,.original-video-page1,.original-video-page2,#teacher-page1,#teacher-page2,#teacher-page3{
+    height: 492px;
+}
+#star div>div,#cqupt-img div>div,#original-video div>div,#excellent-teacher div>div {
+    width: 20%;
+    height: 193px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 30px;
+
+}
+.page li a{
+    cursor: pointer;
+}
+.star-page2,#cqupt-img-page2,#cqupt-img-page3,#cqupt-img-page4,#cqupt-img-page5,.original-video-page2,#teacher-page2,#teacher-page3 {
+    display: none;
+}
+#star div>a,#cqupt-img div>a,#original-video div>a,#excellent-teacher div>a {
+    display: block;
+    width: 100%;
+    height:160px;
+    background-color: #5db9aa;
+}
+#star div>a:hover,#cqupt-img  div>a:hover,#original-video div>a:hover,#excellent-teacher div>a:hover {
+    background-color: #ff6f30;
+     color:#ff9048;
+}
+#star div a img,#cqupt-img  div a img,#original-video div a img,#excellent-teacher div a img {
+    width: 168px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.start-word {
+    margin-top: 15px;
+    height: 31px;
+    text-align: center;
+    font-size: 15.6px;
+    font-family: "Microsoft YaHei";
+    color: #79362a;
+}
+#star div:hover>p,#cqupt-img  div:hover>p,#original-video div:hover>p,#teacher-wrap div:hover>p {
+     color:#ff9048;
+}
+a {
+    cursor: pointer;
+}
+#nav #style {
+    background-color: #d0ea59;
+    color: #66a01c;
+}
+.style-page {
+    color: red;
+    text-align: center;
+    margin-top: 0px;   
+    background-color: red;
+}
+.style-page a {
+    height: 10px;
+    display: inline-block;
+    width: 300px;
+}
+.style-main-content {
+    width: 100%;
+    height: 537px;
+}
+.style-page a span {
+    color: #fff4ce;
+}
+.page{
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-left: 1px;
+    display: inline-block;
+
+}
+.page a {
+    
+    background-color: #ff6f30;
+    font-family: "Microsoft YaHei";
+    margin-top: 10px;
+    text-decoration:none;
+    display: inline-block;
+    width: 17px;
+    line-height:23px;
+    font-size: 16px;
+    border-radius: 18px;
+    padding:2px 5px;
+    color:#ffffff;
+    margin:0 2px;
+}
+.page a:hover,.page a.on {
+    background:#5db9aa;
+    color:#ffffff;
+    
+}
+.page a.unclick,.page a.unclick:hover {
+    background-color: #ff6f30;
+    color:#ffffff;
+    cursor:default;
+}
+.page li {
+    display: inline-block;
+}
+/*content*/
