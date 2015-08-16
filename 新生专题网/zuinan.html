@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="scripts/build/dist/echarts.js"></script>
+<script>
+    require.config({
+        paths: {
+            echarts: "scripts/src"
+        }
+    });
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/pie' // 使用柱状图就加载bar模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main'));
+                var idx = 1;
+                var option = {
+                    timeline : {
+                        data : [
+                            '计院','通信','自动化','光电','传媒','经管','外国语','体院','生物','软件','法学院','数理','国际','先进制造'
+                        ],
+                        type: "number",
+                        controlPosition: "none",
+                        borderColor: "#ff6f30",
+                        lineStyle: {
+                            color: "#ff6f30",
+                            width: 1
+                        },
+                        label : {
+                            textStyle: {
+                                color: "#6c1815"
+                            },
+                            formatter : function(s) {
+                                return s.slice(0, 4);
+                            }
+                        },
+//                        symbolList: ["circle"],
+                        checkpointStyle: {
+                            color: "#ff6f30"
+                        }
+                    },
+                    options : [
+                        {
+                            title : {
+                                text: '各学院学生心中的最难科目',
+//                                subtext: '纯属虚构',
+                                x: "left",
+                                textStyle: {
+                                    color: "#6c1815"
+                                }
+                            },
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            legend: {
+                                data:['中外设计史','西方美术史','设计素描'],
+                                x: "80%",
+                                y: "50%",
+                                orient : 'vertical'
+                            },
+                            calculable : true,
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    radius: '66%',
+                                    center: ['50%', '50%'],
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: 2222,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设素描'}]
+                                }
+                            ]
+                        },
+                        {
+                            series : [
+                                {
+                                    name:'浏览器（数据纯属虚构）',
+                                    type:'pie',
+                                    data:[
+                                        {value: idx * 128 + 80,  name:'中外设计史'},
+                                        {value: idx * 64  + 160,  name:'西方美术史'},
+                                        {value: idx * 32  + 320,  name:'设计素描'}
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                };
+
+                // 为echarts对象加载数据
+                myChart.setOption(option);
+            }
+    );
+</script>
+</body>
+</html>
